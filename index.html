@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea house with daisy ui</title>
+    <!-- tailwind and daisy ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- tailwind customization  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+      <!-- font awesome link  -->
+      <script src="https://kit.fontawesome.com/7f40997cb0.js" crossorigin="anonymous"></script>
+
+    <!-- manrope google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- internal css style  -->
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <h1>hello tea house</h1>
-    <header>
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+              <div>
+                <h1 class="text-7xl  font-extrabold">It's good <br>
+                    tea time at The <br> Tea House</h1>
+                <p class="py-6 text-xl font-medium">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="btn btn-primary">Explore More </button>
+              </div>
+              <div>
+                <img src="./images/banner.png" class="max-w-sm" />
+
+                <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white rounded-lg p-5 w-64">
+                  <i class="fa-solid fa-star text-5xl  text-[#FFC850]"></i>
+                    <div>
+                        <h3 class="text-3xl font-extrabold">5.00</h3>
+                        <p class="font-semibold">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </header>
     <main></main>
     <footer></footer>
